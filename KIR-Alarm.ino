@@ -117,7 +117,7 @@ void loop()
 
 BLYNK_WRITE(V2)
 {
-  outVal = map(param.asInt(), 0, 255, 0, 100);
+  outVal = map(param.asInt(), 0, 255, 0, 50);
   dimmer.setState(lampState ? ON : OFF);
   Serial.println(outVal);
   dimmer.setPower(outVal);
