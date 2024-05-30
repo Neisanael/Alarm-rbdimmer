@@ -21,3 +21,6 @@ Automatic activation of alarm components at predefined times. Integration with B
 ## Schematic
 
 ![Schematic](https://github.com/Neisanael/Alarm-rbdimmer/blob/main/Schematic.png?raw=true)
+
+> **Warning:**
+> The schematic provided may vary depending on the specific components you are using. Not all components use the same pins. Please refer to the datasheets of your components before making connections to avoid any damage.
