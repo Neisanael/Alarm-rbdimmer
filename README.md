@@ -17,3 +17,7 @@ Automatic activation of alarm components at predefined times. Integration with B
     - Blynk - Library for Blynk platform integration.
     - RBDdimmer - Library for controlling dimmer modules.
     - RTClib - Library for interfacing with RTC modules.
+
+## Schematic
+
+![Schematic](https://github.com/Neisanael/Alarm-rbdimmer/blob/main/Schematic.png?raw=true)
