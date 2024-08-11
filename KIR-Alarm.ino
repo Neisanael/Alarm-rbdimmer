@@ -63,7 +63,7 @@ void setup()
   dimmer.setPower(0);
   pinMode(BUZZER, OUTPUT);
 
-  rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
+  //rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
   Serial.println("RTC time set.");
   rtc.disable32K();
 
@@ -115,9 +115,9 @@ void loop()
   }
 }
 
-BLYNK_WRITE(V2)
+BLYNK_WRITE(V0)
 {
-  outVal = map(param.asInt(), 0, 255, 0, 50);
+  outVal = map(param.asInt(), 0, 255, 0, 100);
   dimmer.setState(lampState ? ON : OFF);
   Serial.println(outVal);
   dimmer.setPower(outVal);
